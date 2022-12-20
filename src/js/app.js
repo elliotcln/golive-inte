@@ -63,6 +63,22 @@ new Splide(".splide.carousel-refs", {
 }).mount();
 
 document.addEventListener("DOMContentLoaded", () => {
+  // const lines = document.querySelectorAll(".lines");
+  // lines.forEach((line) => {
+  //   const tl = line.innerText;
+  //   let sl = tl.split(" ");
+  //   let linesArray = [];
+  //   var n = 0;
+  //   do {
+  //     sl.splice(n + 3);
+  //     linesArray[n] = sl.join(" ");
+  //     n = n + 1;
+  //     console.log(sl.length);
+  //     console.log(linesArray);
+  //   } while (sl.length == 0);
+  // });
+
+  // forms toggle
   let contactButtons = document.querySelectorAll(
     ".contact-forms__buttons button, .js-form-actions__back"
   );
