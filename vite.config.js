@@ -1,1 +1,3 @@
-export default {};
+export default {
+  assetsInclude: ["**/*.woff", "**/*.woff2"],
+};
