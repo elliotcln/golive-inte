@@ -1,0 +1,31 @@
+.post-item {
+  list-style-type: none;
+  display: grid;
+  gap: 1rem;
+
+  .post-item__thumb {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+
+  .post-meta {
+    font-size: 0.75em;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h3 {
+    font-size: 1.235rem;
+    font-weight: 400;
+  }
+}

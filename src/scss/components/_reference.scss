@@ -1,0 +1,42 @@
+.ref-item {
+  display: grid;
+  list-style-type: none;
+
+  > img {
+    width: 100%;
+    aspect-ratio: 16/12;
+    object-fit: cover;
+  }
+
+  > div {
+    padding: 2rem;
+    @include tablet {
+      padding: 3rem;
+    }
+
+    h3,
+    a {
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 0.9em;
+    }
+    a {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.8em;
+      color: currentColor;
+    }
+  }
+
+  &--blue {
+    background-color: var(--c-blue);
+  }
+  &--green {
+    background-color: var(--c-green);
+  }
+  &--yellow {
+    background-color: var(--c-yellow);
+  }
+}

@@ -1,0 +1,196 @@
+footer.site-footer {
+  overflow: hidden;
+  position: relative;
+  padding-block: 3rem 2rem;
+  background-color: var(--c-black);
+  color: var(--c-white);
+
+  @include tablet {
+    padding-block: 5rem 3rem;
+  }
+  @include desktop {
+    padding-block: 8rem 5rem;
+  }
+
+  .shape.spirale {
+    z-index: 1;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: var(--c-yellow);
+    }
+  }
+
+  h2 {
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+  }
+
+  address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: right;
+    font-weight: 400;
+    font-style: normal;
+
+    span:first-child {
+      font-weight: bold;
+    }
+  }
+
+  // contact forms
+  .contact-forms {
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+
+      &.hidden {
+        display: none;
+      }
+
+      @include tablet {
+        flex-direction: row;
+      }
+
+      button {
+        padding: 1rem;
+        background: transparent;
+        color: var(--c-white);
+        border: 1px dashed var(--c-white);
+        cursor: pointer;
+        border-radius: 1rem;
+
+        &:hover,
+        &:focus {
+          background-color: var(--c-yellow);
+          border-color: var(--c-yellow);
+          color: var(--c-black);
+        }
+
+        @include tablet {
+          flex: 1;
+          border-radius: 100%;
+          padding: 3rem;
+          aspect-ratio: 1/1;
+        }
+        @include desktop {
+          flex: inherit;
+          width: clamp(10rem, 20vw, 18rem);
+          height: clamp(10rem, 20vw, 18rem);
+        }
+      }
+    }
+
+    &__container {
+      margin-top: 2rem;
+      &.hidden {
+        display: none;
+      }
+
+      @include tablet {
+        max-width: 66%;
+      }
+
+      form {
+        &.hidden {
+          // display: none;
+        }
+      }
+
+      input {
+        width: 100%;
+        padding: 0.8rem 0.5rem 0.5rem 0.7rem;
+        border: 1px dashed var(--c-white);
+        background: transparent;
+        border-radius: 1rem;
+      }
+      label {
+        padding-inline: 0.2rem;
+        margin-left: 0.5rem;
+        background-color: var(--c-black);
+        transform: translateY(49%);
+      }
+
+      .form-control {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include tablet {
+          width: calc(50% - 0.5rem);
+        }
+      }
+
+      .form-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        button {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.25rem;
+          padding: 1rem 2.5rem;
+          background: transparent;
+          border: 1px solid var(--c-white);
+          color: var(--c-white);
+          border-radius: 1rem;
+          cursor: pointer;
+
+          svg {
+            height: 2rem;
+          }
+
+          &[type="submit"] {
+            background-color: var(--c-yellow);
+            border-color: var(--c-yellow);
+            color: var(--c-black);
+          }
+        }
+      }
+
+      .form-option-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include tablet {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  // /contact forms
+
+  address + nav {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      margin: 1rem 0 0 0;
+      padding: 0;
+      font-size: 0.8em;
+    }
+
+    li:not(:last-child) {
+      padding-right: 1rem;
+
+      &::after {
+        content: "|";
+        margin-left: 1rem;
+      }
+    }
+  }
+}

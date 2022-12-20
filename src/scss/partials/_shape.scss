@@ -1,0 +1,64 @@
+// shapes
+.shape {
+  position: absolute;
+  transition: transform 0.85s ease;
+
+  &.triangle--blue {
+    width: clamp(10rem, 30vw, 25rem);
+    right: 2rem;
+    top: 8rem;
+    z-index: 0;
+
+    @include tablet {
+      top: 2rem;
+    }
+    @include desktop {
+      top: 0;
+      right: 10rem;
+    }
+  }
+
+  &.circle--green {
+    left: 0;
+    bottom: -4rem;
+    width: clamp(10rem, 30vw, 30rem);
+    z-index: 0;
+
+    @include tablet {
+    }
+    @include desktop {
+      left: -2rem;
+      bottom: -8rem;
+    }
+  }
+
+  &.dots {
+    left: 0;
+    top: 100%;
+    transform-origin: top left;
+    transform: scale(35%) translateX(-25%);
+
+    @include tablet {
+      transform: scale(50%) translateX(-25%);
+    }
+
+    @include desktop {
+      transform: scale(100%) translateX(-25%);
+    }
+  }
+
+  &.spirale {
+    right: 0;
+    bottom: 100%;
+    transform-origin: bottom right;
+    transform: scale(35%) translateX(25%) translateY(10%);
+
+    @include tablet {
+      transform: scale(50%) translateX(50%) translateY(25%);
+    }
+
+    @include desktop {
+      transform: scale(100%) translateX(50%) translateY(25%);
+    }
+  }
+}

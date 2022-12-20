@@ -1,0 +1,174 @@
+// vision section
+#section-vision {
+  > .container {
+    padding-bottom: 0;
+  }
+  .content {
+    display: grid;
+    gap: 1rem;
+
+    > img,
+    > video,
+    > iframe {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      position: relative;
+      z-index: 20;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(12, 1fr);
+
+      > p {
+        grid-column: 1/4;
+      }
+      > img,
+      > iframe,
+      > video {
+        grid-column: 4/13;
+      }
+    }
+  }
+}
+
+// blog section
+#section-blog {
+  @include tablet {
+    margin-top: -1.65rem;
+  }
+  > .container {
+    padding-top: 1rem;
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 4rem;
+    }
+  }
+  h2 {
+    position: relative;
+    display: inline-block;
+    padding: 2rem 1.85rem;
+    margin-left: -1.65rem;
+    background-color: var(--c-black);
+    color: var(--c-yellow);
+    font-size: 1.235rem;
+    font-weight: 500;
+  }
+
+  .posts-grid {
+    position: relative;
+    display: grid;
+    gap: 2.125rem;
+    margin: 0;
+    margin-top: -1rem;
+    padding: 0;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4rem;
+    }
+  }
+}
+
+// site title
+.site-title {
+  position: relative;
+  height: 100vh;
+  z-index: 11;
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: var(--gutter-width);
+    inset-block: 1rem 0;
+    width: 1px;
+    background: linear-gradient(to bottom, rgba(black, 0.1), rgba(white, 0.4));
+    // border-right: 1px solid rgba(#000, 0.1);
+  }
+
+  h1 {
+    padding-block: 4rem;
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: clamp(1.25rem, 4vw, 2rem);
+    // font-size: 2.75rem;
+    pointer-events: all;
+    &:first-line {
+      font-weight: 600;
+    }
+  }
+}
+
+// refs section
+.carousel-refs {
+  position: relative;
+  margin-top: 2rem;
+  @include desktop {
+    margin-top: 3.125rem;
+  }
+
+  $arrowWidth: 4rem;
+  .splide__arrow {
+    width: $arrowWidth;
+    height: $arrowWidth;
+    background-color: var(--c-black);
+    color: var(--c-white);
+    opacity: 1;
+
+    &:not(:disabled):hover {
+      background-color: var(--c-yellow);
+      color: var(--c-black);
+      opacity: 1;
+    }
+
+    &:focus {
+      color: var(--c-yellow);
+    }
+
+    &:disabled {
+      opacity: 0.35;
+    }
+  }
+
+  .splide__arrow--prev {
+    // left: calc($arrowWidth * -1.25);
+    left: inherit;
+    right: clamp(100%, 90vw, calc(var(--container-width) + #{$arrowWidth}));
+    transform: translateX(50%) translateY(-50%);
+  }
+  .splide__arrow--next {
+    // right: calc($arrowWidth * -1.25);
+    right: inherit;
+    left: clamp(100%, 90vw, calc(var(--container-width) + #{$arrowWidth}));
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.hp-refs-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+
+.refs-excerpt {
+  @include tablet {
+    max-width: 75%;
+  }
+}

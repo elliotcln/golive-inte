@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golive</title>
+    <link rel="stylesheet" href="./src/scss/app.scss" />
+  </head>
+  <body>
+    <!-- header -->
+    <header role="banner" class="site-header">
+      <div class="container">
+        <!-- logo -->
+        <a href="#" class="site-logo">
+          <img src="./src/assets/goLive_logo.svg" alt="Golive logo" />
+        </a>
+        <nav aria-label="homepage anchors">
+          <ul class="anchors-navigation">
+            <li aria-current="page">
+              <a href="#section-vision">Notre vision</a>
+            </li>
+            <li><a href="#">Nos interventions</a></li>
+            <li><a href="#section-refs">Références</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- nav blog -->
+        <a href="#section-blog" class="blog-link"><span>Blog</span></a>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- h1 site title -->
+      <div class="container site-title">
+        <h1 id="carousel-title">
+          Agence de webmastering<br />
+          au service de la qualité web
+        </h1>
+      </div>
+      <!-- carousel -->
+      <section
+        class="hp-carousel splide"
+        aria-label="homepage component"
+        aria-roledescription="carousel"
+      >
+        <div class="splide__track">
+          <ul class="hp-carousel__inner splide__list">
+            <li
+              class="slide splide__slide active"
+              style="background-image: url('./src/assets/slide-1.jpg')"
+            >
+              <div class="container">
+                <p class="lines">
+                  <!-- Nous avons l'expérience des écosystèmes digitaux complexes et
+                  exigeants -->
+                  <span>Nous avons l'expérience</span>
+                  <span>des écosystèmes digitaux</span>
+                  <span>complexes et exigeants</span>
+                </p>
+              </div>
+            </li>
+            <li
+              class="slide splide__slide"
+              style="background-image: url('./src/assets/slide-2.jpg')"
+            >
+              <div class="container">
+                <p class="lines">
+                  <span>Faire de chaque contenu une</span>
+                  <span>expérience de consultation</span>
+                  <span>informative et agréable</span>
+                  <!-- Faire de chaque contenu une expérience de consultation
+                informative et agréable -->
+                </p>
+              </div>
+            </li>
+            <li
+              class="slide splide__slide"
+              style="background-image: url('./src/assets/slide-3.jpg')"
+            >
+              <div class="container">
+                <p class="lines">
+                  <span>Publier des contenus</span>
+                  <span>à l'état de l'art</span>
+                  <span>de l'accessibilité</span>
+                  <!-- Publier des contenus à l'état de l'art de l'accessibilité -->
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- vision -->
+      <section
+        aria-label="Notre vision"
+        class="section section--yellow"
+        id="section-vision"
+      >
+        <div class="container">
+          <!-- shapes -->
+          <img
+            src="./src/assets/shapes/triangle--blue.svg"
+            alt=""
+            class="shape triangle--blue"
+          />
+          <img
+            src="./src/assets/shapes/circle--green.svg"
+            alt=""
+            class="shape circle--green"
+          />
+          <!-- /shapes -->
+          <h2 id="vision-title" class="section-title">
+            <img src="./src/assets/icons/eye.svg" alt="" />
+            <span>Notre vision</span>
+          </h2>
+          <div class="content">
+            <p class="section-excerpt">
+              Nous œuvrons chaque jour pour des sites web plus clairs, plus
+              accessibles, plus visibles.
+            </p>
+            <!-- <img src="./src/assets/portrait-verbatim.png" alt="" /> -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/WrmndNpWSJw?controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- blog -->
+      <section
+        aria-label="Blog"
+        class="section section--yellow"
+        id="section-blog"
+      >
+        <div class="container">
+          <h2 id="blog-title">Blog</h2>
+          <div>
+            <ul class="posts-grid">
+              <li class="post-item">
+                <img
+                  src="./src/assets/portrait-verbatim.png"
+                  alt=""
+                  class="post-item__thumb"
+                />
+                <div>
+                  <div class="post-meta">
+                    3 Janvier 2023 - <a href="#">#tendance</a>
+                  </div>
+                  <a href="#"
+                    ><h3>
+                      Nulla sollicitudin magna eget ex sodales imperdiet
+                    </h3></a
+                  >
+                </div>
+              </li>
+              <li class="post-item">
+                <img
+                  src="./src/assets/portrait-verbatim.png"
+                  alt=""
+                  class="post-item__thumb"
+                />
+                <div>
+                  <div class="post-meta">
+                    3 Janvier 2023 - <a href="#">#tendance</a>
+                  </div>
+                  <a href="#"
+                    ><h3>
+                      Nulla sollicitudin magna eget ex sodales imperdiet
+                    </h3></a
+                  >
+                </div>
+              </li>
+              <li class="post-item">
+                <img
+                  src="./src/assets/portrait-verbatim.png"
+                  alt=""
+                  class="post-item__thumb"
+                />
+                <div>
+                  <div class="post-meta">
+                    3 Janvier 2023 - <a href="#">#tendance</a>
+                  </div>
+                  <a href="#"
+                    ><h3>
+                      Nulla sollicitudin magna eget ex sodales imperdiet
+                    </h3></a
+                  >
+                </div>
+              </li>
+            </ul>
+            <div class="more-links__container">
+              <a href="#">Tous les articles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- references -->
+      <section aria-label="Références" class="section" id="section-refs">
+        <div class="container">
+          <h2 id="ref-title" class="section-title">
+            <img src="./src/assets/icons/crown.svg" alt="" />
+            <span>Références</span>
+          </h2>
+          <div>
+            <p class="refs-excerpt section-excerpt">
+              Chaque jour, nous aidons les directions de nos clients grands
+              comptes à actualiser leurs dispositifs numériques, à les
+              optimiser, à enrichir et diffuser les bonnes pratiques de
+              contribution.
+            </p>
+            <div class="carousel-refs splide">
+              <!-- prev/next buttons -->
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <!-- references -->
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="ref-item ref-item--blue splide__slide">
+                    <img src="./src/assets/portrait-verbatim.png" alt="" />
+                    <div class="ref-item__content">
+                      <h3>Ademe</h3>
+                      <p>
+                        Un dispositif de webmastering éditorial au service des
+                        contributeurs et de la qualité de l’écosystème digital.
+                      </p>
+                      <a href="#" aria-label="Découvrir le projet - ADEME"
+                        >Découvrir le projet</a
+                      >
+                    </div>
+                  </li>
+                  <li class="ref-item ref-item--yellow splide__slide">
+                    <img src="./src/assets/portrait-verbatim.png" alt="" />
+                    <div class="ref-item__content">
+                      <h3>EDF</h3>
+                      <p>
+                        Un dispositif de webmastering éditorial au service des
+                        contributeurs et de la qualité de l’écosystème digital.
+                      </p>
+                      <a href="#" aria-label="Découvrir le projet - EDF"
+                        >Découvrir le projet</a
+                      >
+                    </div>
+                  </li>
+                  <li class="ref-item ref-item--green splide__slide">
+                    <img src="./src/assets/portrait-verbatim.png" alt="" />
+                    <div class="ref-item__content">
+                      <h3>Suez</h3>
+                      <p>
+                        Un dispositif de webmastering éditorial au service des
+                        contributeurs et de la qualité de l’écosystème digital.
+                      </p>
+                      <a href="#" aria-label="Découvrir le projet - SUEZ"
+                        >Découvrir le projet</a
+                      >
+                    </div>
+                  </li>
+                  <li class="ref-item ref-item--blue splide__slide">
+                    <img src="./src/assets/portrait-verbatim.png" alt="" />
+                    <div class="ref-item__content">
+                      <h3>Ademe</h3>
+                      <p>
+                        Un dispositif de webmastering éditorial au service des
+                        contributeurs et de la qualité de l’écosystème digital.
+                      </p>
+                      <a href="#" aria-label="Découvrir le projet - ADEME"
+                        >Découvrir le projet</a
+                      >
+                    </div>
+                  </li>
+                  <li class="ref-item ref-item--yellow splide__slide">
+                    <img src="./src/assets/portrait-verbatim.png" alt="" />
+                    <div class="ref-item__content">
+                      <h3>EDF</h3>
+                      <p>
+                        Un dispositif de webmastering éditorial au service des
+                        contributeurs et de la qualité de l’écosystème digital.
+                      </p>
+                      <a href="#" aria-label="Découvrir le projet - EDF"
+                        >Découvrir le projet</a
+                      >
+                    </div>
+                  </li>
+                  <li class="ref-item ref-item--green splide__slide">
+                    <img src="./src/assets/portrait-verbatim.png" alt="" />
+                    <div class="ref-item__content">
+                      <h3>Suez</h3>
+                      <p>
+                        Un dispositif de webmastering éditorial au service des
+                        contributeurs et de la qualité de l’écosystème digital.
+                      </p>
+                      <a href="#" aria-label="Découvrir le projet - SUEZ"
+                        >Découvrir le projet</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" role="contentinfo" class="site-footer">
+      <div class="container">
+        <img src="./src/assets/shapes/f-dots.svg" alt="" class="shape dots" />
+        <img
+          src="./src/assets/shapes/f-spirale.svg"
+          alt=""
+          class="shape spirale"
+        />
+        <h2>
+          <img src="./src/assets/icons/chat.svg" alt="" />
+          <span>C'est à vous,<br />dites-nous tout</span>
+        </h2>
+
+        <div class="contact-forms">
+          <div class="contact-forms__buttons">
+            <button aria-controls="form-option-1" aria-expanded="false">
+              J'ai un projet, on en parle ?
+            </button>
+            <button aria-controls="form-option-2" aria-expanded="false">
+              Je veux faire partie de l'équipe goLive
+            </button>
+            <button aria-controls="form-option-2" aria-expanded="false">
+              Je veux prêter main forte en tant que freelance
+            </button>
+          </div>
+
+          <div class="contact-forms__container hidden">
+            <form class="hidden form-option-1" id="form-option-1">
+              <div class="form-control">
+                <label for="option-1-email"
+                  >Votre e-mail pro <sup>*</sup>:</label
+                >
+                <input
+                  id="option-1-email"
+                  type="email"
+                  placeholder="contact@golive.agency"
+                />
+              </div>
+              <div class="form-control">
+                <label for="option-1-name">Votre nom <sup>*</sup>:</label>
+                <input id="option-1-name" type="text" placeholder="John Doe" />
+              </div>
+              <div class="form-control">
+                <label for="option-1-entreprise"
+                  >Votre entreprise <sup>*</sup>:</label
+                >
+                <input
+                  id="option-1-entreprise"
+                  type="text"
+                  placeholder="goLive"
+                />
+              </div>
+              <div class="form-control">
+                <label for="option-1-tel">Votre téléphone <sup>*</sup>:</label>
+                <input
+                  id="option-1-tel"
+                  type="tel"
+                  placeholder="+33 7 88 99 00 33"
+                />
+              </div>
+              <div class="form-actions">
+                <button class="js-form-actions__back" role="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                    />
+                  </svg>
+
+                  <span>Précédent</span>
+                </button>
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <address role="complementary">
+          <span>goLive</span>
+          <a href="tel:+33 1 78 16 06 20">+33 1 78 16 06 20</a>
+          <span>32 rue Étienne Marcel</span>
+          <span>75002 Paris - France</span>
+        </address>
+        <nav aria-label="liens complémentaires">
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>
